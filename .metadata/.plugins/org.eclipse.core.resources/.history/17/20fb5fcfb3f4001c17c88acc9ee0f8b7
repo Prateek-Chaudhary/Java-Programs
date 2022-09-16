@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+public class TemperatureConverter {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		double cel,fah,kel;
+		boolean condition=true;
+		while(condition) {
+			System.out.println("Please select the temperature from the given below:");
+			System.out.println("1. Celcius   2. Fahrenheit   3. Kelvin");
+			int temp1=sc.nextInt();
+			if(temp1==1) {
+				System.out.println("Please enter the temperature in Celcius:");
+				cel=sc.nextDouble();
+				System.out.println("In which temperature you want to convert:");
+				System.out.println("1. Fahrenheit   2. Kelvin");
+				int temp2=sc.nextInt();
+				if(temp2==1) {
+					fah=cel*(9/5)+32;
+					System.out.println("Temperature in Fahrenheit : "+fah);
+				}
+				else if(temp2==2) {
+					kel=cel+273.15;
+					System.out.println("Temperature in Kelvin : "+kel);
+				}
+				else {
+					System.out.println("Entered the wrong input please enter the valid input");
+				}
+			}
+			else if(temp1==2) {
+				System.out.println("Please enter the temperature in Fahrenheit:");
+				fah=sc.nextDouble();
+				System.out.println("In which temperature you want to convert:");
+				System.out.println("1. Celcius   2. Kelvin");
+				int temp2=sc.nextInt();
+				if(temp2==1) {
+					cel=(fah-32)*(5/9);
+					System.out.println("Temperature in Celcius : "+cel);
+				}
+				else if(temp2==2) {
+					kel=(fah-32)*(5/9)+273.15;
+					System.out.println("Temperature in Kelvin : "+kel);
+				}
+				else {
+					System.out.println("Entered the wrong input please enter the valid input");
+				}
+			}
+			else if(temp1==3) {
+				System.out.println("Please enter the temperature in Kelvin:");
+				kel=sc.nextDouble();
+				System.out.println("In which temperature you want to convert:");
+				System.out.println("1. Celcius   2. Fahrenheit");
+				int temp2=sc.nextInt();
+				if(temp2==1) {
+					cel=kel-273.15;
+					System.out.println("Temperature in Celcius : "+cel);
+				}
+				else if(temp2==2) {
+					fah=(kel-273.15)*(9/5)+32;
+					System.out.println("Temperature in Fahrenheit : "+fah);
+				}
+				else {
+					System.out.println("Entered the wrong input please enter the valid input");
+				}
+			}
+			else {
+				System.out.println("You entered the wrong input please enter again");
+				condition=true;
+			}
+		}	
+	}
+}

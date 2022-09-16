@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class ProgrammerCalculator {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String str=Integer.toBinaryString(22);
+		String str2=Integer.toOctalString(16);
+		String str3=Integer.toHexString(193);
+		System.out.println(str);
+		System.out.println(str2);
+		System.out.println(str3);
+		
+	}
+}

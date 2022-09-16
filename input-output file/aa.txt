@@ -1,0 +1,6 @@
+Welcome to this file
+This is the content of this file
+This PrintStream will store the data into the file not in the console
+Welcome to this file
+This is the content of this file
+This PrintStream will store the data into the file not in the console
