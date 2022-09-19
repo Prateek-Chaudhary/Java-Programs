@@ -12,3 +12,4 @@ public class NumberTriangle {
 		}
 	}
 }
+// This is comment inserted using the git kraken
